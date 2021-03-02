@@ -8,7 +8,7 @@ class Article(models.Model):
     slug = models.SlugField()
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)  # automatic timestamp
-    # add in thumbnail later
+    thumb = models.ImageField(default='default.png', blank=True)  # default.png manually placed in the folder, blank=True means it may be blank
     # add in author later
 
     def __str__(self):

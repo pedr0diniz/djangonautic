@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Articles</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <div class="wrapper"> <!-- wraps our unique content in templates -->
+            <h1><a href="{% url 'articles:list' %}"><img src="{% static 'logo.png' %}"><a></h1>
+            {% block content %} <!-- contains our block of unique content from a template -->
+            {% endblock %}
+        </div>
+    </body>
+</html>
