@@ -106,3 +106,51 @@ nav button{ /* removes any background, makes its color white, changes cursor to 
     margin: 0;
     color: #0f121f;
 }
+
+.site-form{ /* adding a top margin, border and padding to all forms */
+    margin-top: 60px;
+    border: 1px solid #00dba0;
+    padding: 20px;
+}
+
+.site-form input, .site-form textarea{ /* turns form fields into blocks 
+    and gives them margins and padding */
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 10px;
+}
+
+a.highlight{ /* create article button with border, color and padding */
+    border: 1px solid #00dba0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #00dba0;
+}
+
+.helptext, .helptext.ul{ /* django built-in helptext for the signup form */
+    margin: 0 auto 20px;
+    color: #bbb;
+    font-size: 0.9em;
+    display: block;
+}
+
+.errorlist li{ /* signup errors */
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #ff5722;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.errorlist{
+    padding: 0;
+}
+
+.site-form input[type="submit"]{ /* form submit buttons */
+    background: #00dba0;
+    border: 0;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 4px;
+    margin: 10px 0;
+}
