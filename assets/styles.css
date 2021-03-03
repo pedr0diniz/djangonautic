@@ -18,3 +18,91 @@ a, a:hover, a:visited{
     color: #fff;
     text-decoration: none;
 }
+
+.wrapper{ /* defines properties for the wrapper bodies*/
+    max-width: 960px; 
+    margin: 0 auto;
+}
+
+div.wrapper h1{ /* defines properties for h1s in div.wrappers */
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2.4em;
+}
+
+header{ /* splits the header into a grid with two columns, and adds padding */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+nav{ /* justifies the navbar so it touches the app corner */
+    justify-self: end;
+}
+
+nav li{ /* list elements in the navbar be displayed in one line and adds margin */
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav button{ /* removes any background, makes its color white, changes cursor to hand on hover
+            eliminates the border and defines the font-size */
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+}
+
+.articles{ /* defines grid, 3 articles per line, defines gap between articles */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.article{ /* defines the padding and border for each article inside the list */
+    padding: 10px;
+    border: 1px solid #00dba0;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.article h2{ /* styles the article titles */
+    font-size: 1.2em;
+}
+
+.article-detail .article{ /* accesses the div class 
+    article inside the div class article-detail */
+    padding: 0;
+}
+
+.article-detail .article img{ /* accesses the img 
+    inside the div class article inside the 
+    div class article-detail */
+    max-width: 100%;
+}
+
+.article-detail .article h2{ /* accesses the h2  
+    inside the div class article inside the div 
+    class article-detail */
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+}
+
+.article-detail .article p{
+    text-align: center;
+}
+
+.article .author { /* defines an absolute position for 
+    the author inside the article. Also cornered at the 
+    bottom-right. */
+    padding: 10px;
+    background: #00dba0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    color: #0f121f;
+}
